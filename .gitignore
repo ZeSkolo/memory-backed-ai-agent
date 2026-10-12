@@ -2,3 +2,8 @@ __pycache__/
 *.py[cod]
 data/
 .env
+
+# Local frontend runtime
+.web-data/
+__pycache__/
+*.pyc

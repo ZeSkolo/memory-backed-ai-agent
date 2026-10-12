@@ -1,0 +1,44 @@
+{
+  "repo": "memory-backed-ai-agent",
+  "title": "Memory-backed agent",
+  "subtitle": "A conversation that remembers. Explore the offline agent and its persistent memory.",
+  "tools": [
+    {
+      "id": "agent",
+      "kind": "agent",
+      "title": "Memory chat",
+      "description": "Talk to the repository\u2019s offline heuristic agent. Memories persist locally.",
+      "actions": [
+        {
+          "id": "chat",
+          "label": "Send message",
+          "fields": [
+            {
+              "key": "message",
+              "label": "Your message",
+              "type": "textarea",
+              "value": "My name is Ada",
+              "hint": "Try \u201cWhat is my name?\u201d after saving a fact."
+            }
+          ]
+        },
+        {
+          "id": "recall",
+          "label": "Recall memory",
+          "fields": [
+            {
+              "key": "message",
+              "label": "Memory search",
+              "type": "text",
+              "value": "name"
+            }
+          ]
+        }
+      ],
+      "base": "."
+    }
+  ],
+  "previews": [],
+  "runtime": "Offline heuristic MockLLM \u00b7 No API keys required \u00b7 Not a live language model",
+  "port": 8102
+}
